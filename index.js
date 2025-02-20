@@ -12,3 +12,12 @@ function changementdecouleur() {
 }
 setInterval(changementdecouleur, 1000)
 
+let start = document.querySelector(".btn1");
+let stop = document.querySelector(".btn2");
+
+start.addEventListener("click", (e) => {
+  boite.style.backgroundColor = couleur;
+})
+stop.addEventListener("click", (e) => {
+  boite.style.backgroundColor = "transparent";
+})
